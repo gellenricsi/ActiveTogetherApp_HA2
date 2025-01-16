@@ -42,13 +42,32 @@
             <th>Name</th>
             <th>Geburtsdatum</th>
             <th>Kurs</th>
+            <th>
+              Anmeldedatum
+              <button (click)="sortRegistrations('asc')">▲</button>
+              <button (click)="sortRegistrations('desc')">▼</button>
+            </th>
+            <th>Aktion</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let registration of storeService.registrations">
+          <tr *ngFor="let registration of storeService.registrations; let i = index" [class.loading-row]="loading[i]">
             <td data-table="Name:">{{registration.name}}</td>
             <td data-table="Geburtsdatum:">{{registration.birthdate}}</td>
             <td data-table="Kurs:">{{registration.course.name}}</td>
+            <td data-table="Anmeldedatum:">{{registration.registrationDate | date: 'MMM dd, yyyy HH:mm'}}</td>
+            <td>
+              <button 
+                mat-raised-button 
+                color="warn" 
+                (click)="cancelRegistration(getNumericId(registration.id), i)"
+                [disabled]="loading[i]">
+                Abmelden
+              </button>
+              <div class="spinner-overlay" *ngIf="loading[i]">
+                <mat-spinner diameter="20"></mat-spinner>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -59,7 +78,8 @@
         [ngClass]="page == storeService.currentPage ? 'active' : ''" 
         (click)="selectPage(page)" 
         type="button" 
-        *ngFor="let page of returnAllPages()">
+        *ngFor="let page of returnAllPages()"
+        class="pagination-button">
         {{page}}
       </button>
     </div>

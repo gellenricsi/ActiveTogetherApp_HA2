@@ -71,118 +71,40 @@
   ],
   "registrations": [
     {
-      "id": 1,
-      "name": "Testuser",
-      "birthdate": "2024-11-13",
-      "courseId": "_iL775j"
-    },
-    {
-      "name": "Julia Schabasser",
-      "courseId": "_iL775i",
-      "birthdate": "1995-02-23",
-      "id": 2
-    },
-    {
-      "name": "Julia Schabasser",
-      "courseId": "_iL775a",
-      "birthdate": "1995-02-23",
-      "id": 3
-    },
-    {
-      "name": "Richard Gellen",
-      "birthdate": "2002-08-23T22:00:00.000Z",
-      "email": "ricsi16555@gmail.com",
-      "newsletter": false,
-      "courseId": "_iL775i",
-      "id": 4
-    },
-    {
-      "name": "Cristiano Ronaldo",
-      "birthdate": "2024-12-24T23:00:00.000Z",
-      "email": "gellen.business@gmail.com",
-      "newsletter": false,
-      "courseId": "_iL775j",
-      "id": 5
-    },
-    {
-      "name": "ff",
-      "birthdate": "2024-12-09T23:00:00.000Z",
+      "name": "Balogh Cintia",
+      "birthdate": "2025-01-14",
       "email": "ricsi16555@gmail.com",
       "newsletter": false,
       "courseId": "_iL775j",
-      "id": 6
+      "registrationDate": "2025-01-16T14:43:50.434Z",
+      "id": 16
     },
     {
-      "name": "ff",
-      "birthdate": "2024-12-05T23:00:00.000Z",
-      "email": "ricsi16555@gmail.com",
-      "newsletter": false,
-      "courseId": "_iL775j",
-      "id": 7
-    },
-    {
-      "name": "Gellén Richárd",
-      "birthdate": "2024-12-09T23:00:00.000Z",
+      "name": "Ricsi",
+      "birthdate": "2025-01-23",
       "email": "ricsi16555@gmail.com",
       "newsletter": false,
       "courseId": "_iL775a",
-      "id": 8
+      "registrationDate": "2025-01-16T14:46:59.236Z",
+      "id": 17
     },
     {
-      "name": "Gellén Richárd",
-      "birthdate": "2024-12-25T23:00:00.000Z",
+      "name": "Albert",
+      "birthdate": "2025-01-05",
       "email": "ricsi16555@gmail.com",
-      "newsletter": false,
-      "courseId": "_iL775i",
-      "id": 9
-    },
-    {
-      "name": "Gellén Richárd",
-      "birthdate": "2024-12-03",
-      "email": "ricsi16555@gmail.com",
-      "newsletter": false,
-      "courseId": "_iL775j",
-      "id": 10
-    },
-    {
-      "name": "hh",
-      "birthdate": "2024-12-27",
-      "email": "ricsi16555@gmail.com",
-      "newsletter": false,
-      "courseId": "_iL775i",
-      "id": 11
-    },
-    {
-      "name": "Hello World",
-      "birthdate": "2024-12-03",
-      "email": "ricsi16555@gmail.com",
-      "newsletter": true,
+      "newsletter": null,
       "courseId": "_iL775a",
-      "id": 12
+      "registrationDate": "2025-01-16T14:47:53.173Z",
+      "id": 18
     },
     {
-      "name": "Gellén Richárd",
-      "birthdate": "2024-12-18",
-      "email": "ricsi16555@gmail.com",
-      "newsletter": true,
-      "courseId": "_iL775i",
-      "id": 13
-    },
-    {
-      "name": "Gellén Richárd",
-      "birthdate": "2024-12-11",
-      "email": "ricsi16555@gmail.com",
-      "newsletter": false,
-      "courseId": "_iL775i",
-      "id": 14
-    },
-    {
-      "name": "ddd",
+      "name": "Cristiano",
       "birthdate": "2025-01-02",
       "email": "ricsi16555@gmail.com",
       "newsletter": false,
-      "courseId": "_iL775j",
-      "id": 15
+      "courseId": "_iL775a",
+      "registrationDate": "2025-01-16T15:38:02.706Z",
+      "id": 19
     }
   ]
 }

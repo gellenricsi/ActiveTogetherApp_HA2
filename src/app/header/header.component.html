@@ -1,19 +1,16 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-12 text-center mb-3">
-      <h1>{{ title }}</h1>
-      <img src="{{ imagePath }}" class="img-fluid" alt="image" />
+    <div class="col-12 text-center mb-3" style="margin-top: 3vw;">
+      <h1 class="glowing-text">{{ title }}</h1>
     </div>
 
-    <div class="col-12 text-center">
-      <button mat-raised-button [matMenuTriggerFor]="menu" color="primary" class="mx-2">
-        Menu
+    <div class="col-12 text-center button-container">
+      <button mat-raised-button [routerLink]="['/dashboard']" color="primary">
+        Dashboard
       </button>
-
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item [routerLink]="['/dashboard']">Dashboard</button>
-        <button mat-menu-item [routerLink]="['/about']">About</button>
-      </mat-menu>
+      <button mat-raised-button [routerLink]="['/about']" color="primary">
+        About
+      </button>
     </div>
   </div>
 </div>

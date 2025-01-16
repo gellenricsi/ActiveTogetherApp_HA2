@@ -3,6 +3,16 @@
     margin: auto;
 }
 
+button[mat-raised-button]:disabled {
+    background-color: rgb(211, 211, 211);
+    color: white;
+}
+
+button[mat-raised-button] {
+    background-color: rgb(68, 160, 190);
+    color: white;
+}
+
 @media screen and (max-width: 600px) {
     
     .container{

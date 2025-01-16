@@ -1,12 +1,23 @@
 button[mat-raised-button] {
-    margin: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.glowing-text {
+  color: rgb(68, 160, 190);
+  text-shadow: 0 0 10px rgb(68, 160, 190), 0 0 20px rgb(68, 160, 190), 0 0 30px rgb(68, 160, 190), 0 0 40px rgb(68, 160, 190);
+  animation: glow 1.5s ease-in-out infinite alternate;
+  font-size: 3vw;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgb(68, 160, 190), 0 0 10px rgb(68, 160, 190), 0 0 10px rgb(68, 160, 190), 0 0 10px rgb(68, 160, 190);
   }
-  
-  mat-menu {
-    background-color: #fff;
+  50% {
+    text-shadow: 0 0 20px rgb(68, 160, 190), 0 0 30px rgb(68, 160, 190), 0 0 40px rgb(68, 160, 190), 0 0 50px rgb(68, 160, 190);
   }
-  
-  mat-menu-item {
-    color: #1976d2;
+  100% {
+    text-shadow: 0 0 10px rgb(68, 160, 190), 0 0 20px rgb(68, 160, 190), 0 0 30px rgb(68, 160, 190), 0 0 40px rgb(68, 160, 190);
   }
-  
+}
