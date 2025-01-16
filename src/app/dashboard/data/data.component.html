@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <h1 class="title">Kurse</h1>
+    <div class="col-10 col-md-12 mb-4">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Kurs</th>
+            <th>Veranstaltungsort</th>
+            <th>Adresse des Veranstaltungsortes</th>
+            <th>Öffentlich erreichbar?</th>
+            <th>Kursleiter</th>
+            <th>Alle Termine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let course of storeService.courses">
+            <td data-table="Kurs:">{{course.name}}</td>
+            <td data-table="Veranstaltungsort:">{{course.eventLocation.name}}</td>
+            <td data-table="Adresse:">{{course.eventLocation.address}}</td>
+            <td data-table="Öffentlich erreichbar?">{{course.eventLocation.venueByPublicTansport == true ? "Ja" : "Nein"}}</td>
+            <td data-table="Kursleiter:">{{course.instructor}}</td>
+            <td data-table="Alle Termine:">
+              <br><br>
+              <ul>
+                <li *ngFor="let date of course.dates">
+                  <span class="onmobile">{{date.begin | date:"MMM dd, yyyy 'um' hh:mm a"}}</span> - 
+                  <span>{{date.end | date:"MMM dd, yyyy 'um' hh:mm a"}}</span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h1 class="title">Bewerber</h1>
+    <div class="col-10 col-md-12 mb-4">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Geburtsdatum</th>
+            <th>Kurs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let registration of storeService.registrations">
+            <td data-table="Name:">{{registration.name}}</td>
+            <td data-table="Geburtsdatum:">{{registration.birthdate}}</td>
+            <td data-table="Kurs:">{{registration.course.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-10 text-center">
+      <button 
+        [ngClass]="page == storeService.currentPage ? 'active' : ''" 
+        (click)="selectPage(page)" 
+        type="button" 
+        *ngFor="let page of returnAllPages()">
+        {{page}}
+      </button>
+    </div>
+  </div>
+</div>

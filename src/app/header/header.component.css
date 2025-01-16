@@ -1,0 +1,12 @@
+button[mat-raised-button] {
+    margin: 10px;
+  }
+  
+  mat-menu {
+    background-color: #fff;
+  }
+  
+  mat-menu-item {
+    color: #1976d2;
+  }
+  
