@@ -89,15 +89,6 @@
       "id": 17
     },
     {
-      "name": "Albert",
-      "birthdate": "2025-01-05",
-      "email": "ricsi16555@gmail.com",
-      "newsletter": null,
-      "courseId": "_iL775a",
-      "registrationDate": "2025-01-16T14:47:53.173Z",
-      "id": 18
-    },
-    {
       "name": "Cristiano",
       "birthdate": "2025-01-02",
       "email": "ricsi16555@gmail.com",
@@ -105,6 +96,15 @@
       "courseId": "_iL775a",
       "registrationDate": "2025-01-16T15:38:02.706Z",
       "id": 19
+    },
+    {
+      "name": "HID",
+      "birthdate": "2025-01-14",
+      "email": "ricsi16555@gmail.com",
+      "newsletter": true,
+      "courseId": "_iL775j",
+      "registrationDate": "2025-01-16T16:18:22.691Z",
+      "id": 20
     }
   ]
 }
